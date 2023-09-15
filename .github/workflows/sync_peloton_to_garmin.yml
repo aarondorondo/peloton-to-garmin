@@ -9,8 +9,9 @@ on:
       workoutsToDownload:
         type: number
         default: "5"
-  schedule:
-    - cron: '0 1 * * *'
+  schedule: 
+  # Runs "every day at 21:00"
+    - cron: ' 0 21 * * *'
 
 jobs:
   sync:
